@@ -53,11 +53,28 @@
   <ItemGroup>
     <Compile Include="CalendarEvent.cs" />
     <Compile Include="DbModel.cs" />
+    <Compile Include="Migrations\201912091006486_InitialCreate.cs" />
+    <Compile Include="Migrations\201912091006486_InitialCreate.designer.cs">
+      <DependentUpon>201912091006486_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201912091027347_AddEventLocation.cs" />
+    <Compile Include="Migrations\201912091027347_AddEventLocation.designer.cs">
+      <DependentUpon>201912091027347_AddEventLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201912091006486_InitialCreate.resx">
+      <DependentUpon>201912091006486_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201912091027347_AddEventLocation.resx">
+      <DependentUpon>201912091027347_AddEventLocation.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
