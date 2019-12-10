@@ -9,7 +9,7 @@ https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/
 
 ## Commands
 
-> Enable-Migrations
-> Add-Migration [name] -project [project]
-> Update-Database
+- Enable-Migrations
+- Add-Migration [name] -project [project]
+- Update-Database
 
