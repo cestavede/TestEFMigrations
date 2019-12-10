@@ -1,8 +1,15 @@
-# TestEFMigrations
+## TestEFMigrations
 
 EF 6.4.0 code first model, db migration example
 
-# Documentation
+## Documentation
 
 Following this guide
 https://docs.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/
+
+## Commands
+
+> Enable-Migrations
+> Add-Migration [name] -project [project]
+> Update-Database
+
